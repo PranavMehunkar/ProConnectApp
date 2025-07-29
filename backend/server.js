@@ -36,6 +36,9 @@ const start = async () => {
     });
 
     console.log("✅ MongoDB connected");
+    app.get("/", (req, res) => {
+    res.send("Backend running on port 9090");
+    });
     app.listen(9090, () => console.log("🚀 Server running on port 9090"));
   } catch (err) {
     console.error("❌ Server failed to start:", err.message);

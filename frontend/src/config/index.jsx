@@ -1,7 +1,7 @@
 // src/utils/axios.js or similar (React frontend)
 import axios from "axios";
 
-export const BASE_URL = "http://localhost:9090";
+export const BASE_URL = "https://proconnectapp.onrender.com/";
 
 const clientServer = axios.create({
   baseURL: BASE_URL,
