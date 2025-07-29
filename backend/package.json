@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon sever.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "node server.js"
   },
   "author": "Pranav Mehunkar",
   "license": "ISC",
