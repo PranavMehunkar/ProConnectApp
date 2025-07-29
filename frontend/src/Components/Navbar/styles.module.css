@@ -1,0 +1,55 @@
+.container {
+    padding: 1.2rem;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBarOptionContainer {
+    display: flex;
+}
+
+.buttonJoin {
+    background: #CD8987;
+    border-radius: 10px;
+    padding-block: 0.6rem;
+    padding-inline: 1.2rem;
+    color: white;
+    font-size: 0.7rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* components/NavbarComponent.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.leftText {
+  font-weight: 700;
+  font-size: 1.4rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rightText .beApart {
+  background-color: #f47174;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}

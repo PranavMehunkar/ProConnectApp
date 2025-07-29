@@ -1,0 +1,73 @@
+POST http://localhost:9090/register HTTP/1.1
+content-Type: application/json
+
+{
+    "username":"rahul_apnacollege",
+    "password":"password",
+    "email": "rahul@gmail.com",
+    "name": "Rahul"
+}
+
+###
+
+POST http://localhost:9090/login HTTP/1.1
+content-Type: application/json
+
+{
+    "email":"rahul@gmail.com",
+    "password":"password"
+}
+
+###
+
+POST http://localhost:9090/login HTTP/1.1
+content-Type: application/json
+
+{
+    "email":"neha@gmail.com",
+    "password":"password"
+}
+
+###
+
+GET http://localhost:9090/get_user_and_profile HTTP/1.1
+content-Type: application/json
+
+{
+    "token": "4c0348c95ee97c6a808bec3124e332da535a2ca5e42d25ed563a4772759c7120"
+}
+
+###
+
+POST http://localhost:9090/update_profile_data HTTP/1.1
+content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODFkNjBkNjM3MWNiYWFjNzc3MDg3NCIsImlhdCI6MTc1Mzc4OTc3NSwiZXhwIjoxNzUzODc2MTc1fQ.Na_Ac-SdoqVDGFZRy_JG6tZE2HOCeUHg2d7XUOPoz9w",
+    "bio":"Hey I Am Neha, I am from Delhi, I work in XYZ Company, I am a true learner of Apna College",
+    "currentPost": "CTO",
+    "pastWork" : [
+        {
+            "company":"Microsoft",
+            "position":"CTO",
+            "years": "2x",
+            "_id": "6881d60d6371cbaac7770874"
+        }
+    ],
+    "education" : [
+        {
+            "school":"IIIT",
+            "degree":"B.Tech",
+            "fieldOfStudy": "2015-2019",
+            "_id": "6881d60d6371cbaac7770874"
+        }
+    ]
+}
+
+###
+
+GET http://localhost:9090/user/get_all_users HTTP/1.1
+content-Type: application/json
+
+{
+}
