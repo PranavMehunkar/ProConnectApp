@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const BASE_URL = "https://proconnectapp.onrender.com/";
 
-const clientServer = axios.create({
+export const clientServer = axios.create({
   baseURL: BASE_URL,
   headers: {
     'Content-Type': 'application/json',
